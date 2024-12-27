@@ -519,7 +519,10 @@
       "name": "[variables('appInsightsName')]",
       "type": "Microsoft.Insights/components",
       "location": "[parameters('location')]"
-      
+      "properties": {
+        		"Application_Type": "web",
+       			 "Request_Source": "rest"	
+      }
     }
   ],
   "outputs": {
