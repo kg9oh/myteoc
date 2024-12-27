@@ -107,8 +107,8 @@
     ],
     "isSharedPlan": "[contains(variables('sharedSkus'), parameters('hostingPlanSku'))]",
     "skuFamily": "[if(equals(parameters('hostingPlanSku'), 'Shared'), 'D', take(parameters('hostingPlanSku'), 1))]",
-    "workspaceAnalyticsName": "[concat(parameters('baseResourceName'), '-log-analytics')]",
-    "workspaceAnalyticsSku": "pergb2018"
+    "_comment_workspaceAnalyticsName": "[concat(parameters('baseResourceName'), '-log-analytics')]",
+    "_comment_workspaceAnalyticsSku": "pergb2018"
   },
   "resources": [
     {
